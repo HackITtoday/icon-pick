@@ -1,0 +1,14 @@
+{
+  "name": "icon-pick",
+  "version": "1.0.0",
+  "description": "icon-pick",
+  "main": "icon-pick.html",
+  "keywords": [
+    "polymer","web-components"
+  ]
+  "dependencies": {
+    "polymer/polymer": "*",
+    "PolymerElements/paper-dialog": "*",
+    "PolymerElements/paper-icon-button": "*"
+  }
+}
