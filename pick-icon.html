@@ -1,0 +1,40 @@
+<dom-module id="pick-icon">
+  <template>
+    <paper-dialog>
+      <template is="dom-repeat" items="{{iconLists}}">
+        <template is="dom-repeat" items="{{item}}">
+          <paper-icon-button on-tap="_setIcon" icon="{{item}}" title="{{item}}">
+          </paper-icon-button>
+        </template><br>
+      </template>
+    </paper-dialog>
+    <paper-icon-button on-tap="_editIcon" icon="{{icon}}"></paper-icon-button>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: 'pick-icon',
+    properties: {
+      iconLists:{type: Array, value: 
+        [
+          ["android","book","shopping-cart","build","check"],
+          ["face","favorite","grade","note-add","language"],
+          ["help","gesture","bug-report","attachment","assignment-return"],
+          ["accessibility","account-balance","drafts","account-circle","backspace"],
+          ["autorenew","block","card-travel","change-history","content-paste"]
+        ] 
+      },
+      icon:{
+        value:"add",
+        notify:true
+      }
+    },
+    _setIcon: function(e){
+      this.set("icon",e.target.icon);
+      this.$$('paper-dialog').close();
+    }, 
+    _editIcon: function() {
+      this.$$('paper-dialog').open();
+    }
+  });
+</script>
