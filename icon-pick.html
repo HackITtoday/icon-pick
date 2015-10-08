@@ -17,7 +17,7 @@
         </template><br>
       </template>
     </paper-dialog>
-    <paper-icon-button on-tap="_editIcon" icon="{{icon}}"></paper-icon-button>
+    <paper-icon-button on-tap="_editIcon" icon="{{value}}"></paper-icon-button>
   </template>
 </dom-module>
 <script>
@@ -33,13 +33,13 @@
           ["autorenew","block","card-travel","change-history","content-paste"]
         ] 
       },
-      icon:{
+      value:{
         value:"add",
         notify:true
       }
     },
     _setIcon: function(e){
-      this.set("icon",e.target.icon);
+      this.set("value",e.target.icon);
       this.$$('paper-dialog').close();
     }, 
     _editIcon: function() {
