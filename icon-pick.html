@@ -7,7 +7,7 @@
 @demo demo.html
 -->
 
-<dom-module id="pick-icon">
+<dom-module id="icon-pick">
   <template>
     <paper-dialog>
       <template is="dom-repeat" items="{{iconLists}}">
@@ -22,7 +22,7 @@
 </dom-module>
 <script>
   Polymer({
-    is: 'pick-icon',
+    is: 'icon-pick',
     properties: {
       iconLists:{type: Array, value: 
         [
