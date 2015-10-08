@@ -6,9 +6,9 @@
   "keywords": [
     "polymer","web-components"
   ]
-  "dependencies": {
+  "dependencies": [
     "polymer/polymer": "*",
     "PolymerElements/paper-dialog": "*",
     "PolymerElements/paper-icon-button": "*"
-  }
+ ]
 }
