@@ -1,6 +1,7 @@
 <link rel="import" href="../iron-icon/iron-icon.html">
 <link rel="import" href="../icon-icons/iron-icons.html">
 <link rel="import" href="../paper-dialog/paper-dialog.html">
+-<link rel="import" href="../paper-button/paper-button.html">
 <!--
 `<icon-pick>` Sets a icon from a array of arrays
 @demo demo.html
@@ -15,7 +16,9 @@
         </template><br>
       </template>
     </paper-dialog>
-    <iron-icon on-tap="_editIcon" icon="{{value}}" title="{{item}}"></iron-icon>
+    <paper-button on-tap="_editIcon">
+      <iron-icon icon="{{value}}" title="{{item}}"></iron-icon>
+    </paper-button>
   </template>
 </dom-module>
 <script>
