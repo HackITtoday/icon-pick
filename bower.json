@@ -1,0 +1,13 @@
+{
+  "name": "icon-pick",
+  "version": "1.0.0",
+  "description": "icon-pick",
+  "main": "icon-pick.html",
+  "keywords": [
+    "polymer","web-components"
+  ],
+  "dependencies": {
+    "PolymerElements/iron-icons": "PolymerElements/iron-icons#master",
+    "PolymerElements/iron-icon": "PolymerElements/iron-icon#master",
+  }
+}
