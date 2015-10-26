@@ -7,7 +7,7 @@
     "polymer","web-components"
   ],
   "dependencies": {
-    "PolymerElements/iron-icons": "PolymerElements/iron-icons#master",
-    "PolymerElements/iron-icon": "PolymerElements/iron-icon#master",
+    "iron-icons": "PolymerElements/iron-icons#master",
+    "iron-icon": "PolymerElements/iron-icon#master"
   }
 }
