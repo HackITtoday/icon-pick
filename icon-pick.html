@@ -9,7 +9,7 @@
 
 <dom-module id="icon-pick">
   <template>
-    <paper-dialog>
+    <paper-dialog style="padding:20px;">
       <template is="dom-repeat" items="{{iconLists}}">
         <template is="dom-repeat" items="{{item}}">
           <iron-icon icon="{{item}}" on-tap="_setIcon" title="{{item}}"></iron-icon>
